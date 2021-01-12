@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 declare namespace Cypress {
-    interface Chainable<Subject> {
+    interface Chainable<> {
         /**
          * Checks UI by using Jest snapshots
          * @param name snapshot file name
