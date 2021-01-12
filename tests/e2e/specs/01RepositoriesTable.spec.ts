@@ -19,7 +19,7 @@ describe('01 repositories table', () => {
         cy.visit('/');
     });
 
-    it('01-1 home overview', () => {
+    it('01-01 home overview', () => {
         getElem(columnUrl).should('be.visible');
         getElem(columnName).should('be.visible');
         getElem(repositoriesTable).should('be.visible');
