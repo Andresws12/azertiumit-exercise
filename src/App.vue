@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <router-view />
+        <GithubButton />
     </div>
 </template>
 
@@ -11,9 +12,13 @@ import Axios from 'axios';
 
 import mainStore from '@/store/main-store/MainStore';
 
+import GithubButton from '@/components/GithubButton.vue';
+
 @Component({
     name: 'App',
-    components: {},
+    components: {
+        GithubButton,
+    },
 })
 export default class App extends Vue {
     private mainStore = mainStore.context(this.$store);
